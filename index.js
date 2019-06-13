@@ -1,13 +1,18 @@
-const ports = require('@social/social-deployment/topology/portMaps');
+const config = require('config');
+
+// eslint-disable-next-line no-underscore-dangle
+global.__network = config.get('network');
+
 const zmq = require('zmq');
 
 const publisher = zmq.socket('pub');
-
-publisher.bindSync(`tcp://127.0.0.1:${ports.pubsub}`);
+console.log('zmq publisher: ', `tcp://${__network.pubsub.host}:${__network.pubsub.port}`);
+publisher.bindSync(`tcp://${__network.pubsub.host}:${__network.pubsub.port}`);
 
 function makeProxy(service) {
     const listener = zmq.socket('pull');
-    listener.connect(`tcp://127.0.0.1:${ports[service].pubsub}`);
+    console.log(`${service} listener: `, `tcp://${__network[service].host}:${__network[service].publish}`);
+    listener.connect(`tcp://${__network[service].host}:${__network[service].publish}`);
     listener.on('message', (msg) => {
         try {
             const message = JSON.parse(msg.toString());

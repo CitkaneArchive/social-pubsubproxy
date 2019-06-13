@@ -1,0 +1,28 @@
+{
+    "network": {
+        "pubsub": {
+            "host": "127.0.0.1",
+            "port": 2000
+        },
+        "bff": {
+            "host": "127.0.0.1",
+            "static": 3000
+        },
+        "persistance": {
+            "host": "127.0.0.1",
+            "crud": 3101,
+            "publish": 3102
+        },
+        "users": {
+            "host": "127.0.0.1",
+            "crud": 3201,
+            "publish": 3202
+        },
+        "images": {
+            "host": "127.0.0.1",
+            "static": 3300,
+            "crud": 3301,
+            "publish": 3302
+        }
+    }
+}
