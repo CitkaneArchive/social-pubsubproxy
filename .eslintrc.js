@@ -4,7 +4,5 @@ module.exports = {
 		'comma-dangle': ['error', 'never'],
 		'indent': ['error', 4],
 	},
-	globals: {
-		'__network': true
-	}
+	globals: {}
 };
