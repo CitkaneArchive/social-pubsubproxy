@@ -10,19 +10,24 @@
         },
         "persistance": {
             "host": "127.0.0.1",
-            "crud": 3101,
-            "publish": 3102
+            "crud": 3011,
+            "publish": 3012
         },
         "users": {
             "host": "127.0.0.1",
-            "crud": 3201,
-            "publish": 3202
+            "crud": 3021,
+            "publish": 3022
         },
         "images": {
             "host": "127.0.0.1",
-            "static": 3300,
-            "crud": 3301,
-            "publish": 3302
+            "static": 3030,
+            "crud": 3031,
+            "publish": 3032
+        },
+        "activities": {
+            "host": "127.0.0.1",
+            "crud": 3041,
+            "publish": 3042
         }
     }
 }

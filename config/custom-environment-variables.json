@@ -23,6 +23,11 @@
             "static": "IMAGES_STATICPORT",
             "crud": "IMAGES_CRUDPORT",
             "publish": "IMAGES_PUBLISHPORT"
+        },
+        "activities": {
+            "host": "ACTIVITIES_HOST",
+            "crud": "ACTIVITIES_CRUDPORT",
+            "publish": "ACTIVITIES_PUBLISHPORT"
         }
     }
 }
