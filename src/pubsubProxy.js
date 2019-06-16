@@ -19,7 +19,7 @@ function makeProxy(service) {
         }
     });
 }
-const microServices = ['persistance', 'users', 'images'];
+const microServices = ['persistance', 'users', 'activities'];
 
 microServices.forEach((service) => {
     makeProxy(service);
