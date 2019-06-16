@@ -28,6 +28,11 @@
             "host": "ACTIVITIES_HOST",
             "crud": "ACTIVITIES_CRUDPORT",
             "publish": "ACTIVITIES_PUBLISHPORT"
+        },
+        "voting": {
+            "host": "VOTING_HOST",
+            "crud": "VOTING_CRUDPORT",
+            "publish": "VOTING_PUBLISHPORT"
         }
     }
 }
