@@ -1,5 +1,5 @@
 const config = require('config');
-const zmq = require('zmq');
+const zmq = require('zeromq');
 
 const network = config.get('network');
 const publisher = zmq.socket('pub');
