@@ -1,5 +1,5 @@
 {
-  "name": "social-pubsubproxy",
+  "name": "@social/pubsubproxy",
   "version": "0.0.0",
   "description": "provides a central proxy for routing pubsub messages",
   "main": "./src/pubsubProxy.js",
